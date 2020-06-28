@@ -15,10 +15,10 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common ArrowOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_violet
+PRODUCT_NAME := syberia_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -29,9 +29,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet" \
     TARGET_DEVICE="violet"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# for Launcher3
-TARGET_EXCLUDE_LAWNCHAIR := true
